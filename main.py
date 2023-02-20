@@ -25,7 +25,7 @@ def welcome():
 def get_max_duration(
     year: Union[int, None] = None,
     platform: Union[platform_op, None] = None,
-    duration_type: Union[duration_type_op, None] = None)
+    duration_type: Union[duration_type_op, None] = None
     ):
     '''
     Movie with maximum duration and optional filters of year, platform & duration type.
