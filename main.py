@@ -1,4 +1,5 @@
-from fastapi import FastAPI, Query
+from typing import Union
+from fastapi import FastAPI
 import pandas as pd
 from enum import Enum
 
@@ -22,9 +23,9 @@ def welcome():
 
 @splatform.get('/get_max_duration/')
 def get_max_duration(
-    year: int | None = Query(default = None, title = 'Release Year (number)'),
-    platform: platform_op | None = Query(default = None, title = 'Streaming Platform (lower case)'),
-    duration_type: duration_type_op | None = Query(default = None, title = 'Duration Type (min/season)')
+    year: Union[int, None] = None,
+    platform: Union[platform_op, None] = None,
+    duration_type: Union[duration_type_op, None] = None)
     ):
     '''
     Movie with maximum duration and optional filters of year, platform & duration type.
