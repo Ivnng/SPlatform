@@ -2,7 +2,7 @@ from fastapi import FastAPI, Query
 import pandas as pd
 from enum import Enum
 
-title = pd.read_csv('/project/data/transformed_data/title.csv')
+title = pd.read_csv('data/transformed_data/title.csv')
 
 class platform_op(str, Enum):
     amazon_prime = 'amazon'
