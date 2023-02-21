@@ -34,6 +34,8 @@ In this repository you can find the 'title.csv', 'transform_ratings.py' and 'tra
 You can find the rest of the files, including the source data, here:
 https://mega.nz/folder/umIgGLTb#GtdfJXpJJGORmujvGbJMZg
 
+To create the API, FastAPI & Uvicorn were used to test locally. Then, Docker was used to create the Dockerfile and be able to deploy on render.
+
 The API has four main queries:
 1. /get_max_duration/
 2. /get_score_count/{platform}
