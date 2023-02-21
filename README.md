@@ -49,3 +49,5 @@ See the /docs for more guidance.
 
 The next part of the project was made using the same source data, and it's called MPlatform:
 https://github.com/Ivnng/MPlatform
+
+By: Ivanna Villa
